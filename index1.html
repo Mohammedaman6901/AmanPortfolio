@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Amanullah - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #00809D;
+      --accent: #FCECDD;
+      --text: #ffffff;
+      --muted: #FF7601;
+      --bg: #F3A26D;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px 60px;
+      text-align: center;
+      background-color: var(--bg);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .profile-pic {
+      margin: 20px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background-color: var(--accent);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #ffe9d6;
+    }
+
+    section {
+      padding: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #056d81;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: var(--bg);
+      color: var(--text);
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mohammed Amanullah</h1>
+  <p>Computer Science Engineer | Java Developer | Web Enthusiast</p>
+  <p>Bengaluru | <a href="mailto:mohammedaman6901@gmail.com">mohammedaman6901@gmail.com</a> | 09741547389</p>
+
+  <div class="profile-pic">
+    <img src="C:\Users\91974\Desktop\AmanPort\IMG_8787.JPG" alt="Profile Photo" />
+  </div>
+
+  <div class="buttons">
+    <a href="https://github.com/Mohammedaman6901" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="mailto:mohammedaman6901@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="C:\Users\91974\Desktop\AmanPort\Mohammed-Amanullah (june)2025.pdf" download><i class="fas fa-download"></i> Resume</a>
+    <a href="https://www.linkedin.com/in/mohammed-amanullah-52b694307/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://www.instagram.com/mohammed._.aman" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p style="max-width: 800px;">
+    I'm a Computer Science Engineer with a passion for learning and advancing my technical skills. With a solid foundation in Core Java, SQL, and Web Development, I enjoy building scalable and user-friendly applications.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Core Java</h3>
+      <p>OOPs, Interfaces, Exception Handling, Collections Framework, Algorithms.</p>
+    </div>
+    <div class="card">
+      <h3>Frontend</h3>
+      <p>HTML5, CSS3, JavaScript (ES6), Bootstrap, Responsive Design.</p>
+    </div>
+    <div class="card">
+      <h3>SQL</h3>
+      <p>DDL, DML, JOINs, Aggregates, Optimized Queries, Relational Design.</p>
+    </div>
+    <div class="card">
+      <h3>Other</h3>
+      <p>Version Control, Debugging, Full Stack Development Training (Dhee Coding Lab).</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Resume Analyzer & Job Recommender</h3>
+      <p>Tech: NLP, ML (TF-IDF, KNN, Cosine Similarity)</p>
+      <p>Scans resumes, analyzes keywords, and recommends suitable job roles and certifications.</p>
+    </div>
+    <div class="card">
+      <h3>Restaurant Food Ordering System</h3>
+      <p>Tech: HTML, CSS, Java, SQL</p>
+      <p>Built a responsive UI for food browsing and order placement with order summary feature.</p>
+    </div>
+    <div class="card">
+      <h3>Amazon Website Clone</h3>
+      <p>Tech: HTML & CSS</p>
+      <p>Static clone of Amazon's homepage focused on layout and design aesthetics.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>B.E. in Computer Science</h3>
+      <p>IMPACT College of Engineering & Applied Sciences</p>
+      <p><strong>CGPA:</strong> 8.4 (2021 – 2025)</p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary</h3>
+      <p>Falcon Group of Institutions</p>
+      <p><strong>Percentage:</strong> 85.66% (2019 – 2021)</p>
+    </div>
+    <div class="card">
+      <h3>High School</h3>
+      <p>R.T. Nagar Public School</p>
+      <p><strong>Percentage:</strong> 73% (2017 – 2019)</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mohammed Amanullah. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
