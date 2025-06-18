@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammed Amanullah - Portfolio</title>
-  <meta name="description" content="Portfolio website of Mohammed Amanullah - Computer Science Engineer and Web Developer from Bangalore, India.">
-  <meta name="author" content="Mohammed Amanullah">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-MX7oAj7B+g0RzjTnFoqEoNQAx3EYw9NVg1pq4+9zqk8kxly6Zs4FZP0cv7k1RSFBRk2dkSn5V7oBoB2FfFwM0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
       --primary: #00809D;
@@ -130,26 +128,13 @@
       font-size: 1rem;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: auto;
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
 
-    input, textarea, button {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: var(--accent);
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -158,16 +143,16 @@
 <header>
   <h1>Mohammed Amanullah</h1>
   <p>Computer Science Engineer | Java Developer | Web Enthusiast</p>
-  <p>Bengaluru | <span>mohammedaman6901@gmail.com</span> | 09741547389</p>
+  <p>Bengaluru | <a href="mailto:mohammedaman6901@gmail.com">mohammedaman6901@gmail.com</a> | 09741547389</p>
 
   <div class="profile-pic">
-    <img src="face.png" alt="Profile Photo" />
+    <img src="IMG_8787.JPG" alt="Profile Photo" />
   </div>
 
   <div class="buttons">
     <a href="https://github.com/Mohammedaman6901" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    <a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a>
-    <a href="https://drive.google.com/YOUR_PUBLIC_RESUME_LINK" target="_blank"><i class="fas fa-download"></i> Resume</a>
+    <a href="mailto:mohammedaman6901@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="Mohammed-Amanullah (june)2025.pdf" download><i class="fas fa-download"></i> Resume</a>
     <a href="https://www.linkedin.com/in/mohammed-amanullah-52b694307/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a href="https://www.instagram.com/mohammed._.aman" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
@@ -242,15 +227,6 @@
       <p><strong>Percentage:</strong> 73% (2017 – 2019)</p>
     </div>
   </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your message..." rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
 </section>
 
 <footer>
