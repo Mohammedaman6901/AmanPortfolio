@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammed Amanullah - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
       --primary: #00809D;
       --accent: #FCECDD;
-      --text: #ffffff;
+      --text: #FCECDD;
       --muted: #FF7601;
       --bg: #F3A26D;
     }
@@ -19,13 +19,14 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
       background-color: var(--primary);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 1.1rem;
     }
 
     header {
@@ -35,23 +36,24 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: var(--accent);
+      font-weight: 700;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 1rem;
+      margin-top: 12px;
+      font-size: 1.1rem;
       color: var(--text);
     }
 
     .profile-pic {
       margin: 20px auto;
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
     }
 
     .profile-pic img {
@@ -61,7 +63,7 @@
     }
 
     .buttons {
-      margin-top: 20px;
+      margin-top: 25px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -71,31 +73,33 @@
     .buttons a {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 10px 20px;
+      gap: 10px;
+      padding: 10px 22px;
       background-color: var(--accent);
       color: #000;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
 
     .buttons a:hover {
-      background-color: #ffe9d6;
+      background-color: #ffe0c7;
     }
 
     section {
-      padding: 60px;
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
       color: var(--accent);
-      border-bottom: 2px solid var(--accent);
+      border-bottom: 3px solid var(--accent);
       display: inline-block;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
     }
 
     .grid {
@@ -113,7 +117,7 @@
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
 
     footer {
@@ -121,7 +125,7 @@
       color: var(--text);
       text-align: center;
       padding: 30px 10px;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     a {
